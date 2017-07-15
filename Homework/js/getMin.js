@@ -9,3 +9,5 @@ function getMin() {
     }
     console.log(a);
 }
+
+getMin(3, 0, -3);
