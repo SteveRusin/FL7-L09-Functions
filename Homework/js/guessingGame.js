@@ -12,7 +12,6 @@
     function randomNumberGenerator() {
         randomNumber = Math.round(Math.random() * 5);
         randomNumber *= doubleNumber;
-        console.log(randomNumber);
         return randomNumber;
     }
 
@@ -29,7 +28,7 @@
                 break;
             }
             tries--;
-        } while (tries > 0)
+        } while (tries > 0);
         return tries;
     }
 
@@ -52,7 +51,7 @@
         }
     }
 
-    
+
     function result() {
         if (tries > 0) {
             alert('Congratulations! You have won ' + prizeTotal + '$');
@@ -66,14 +65,14 @@
         }
     }
 
-    
+
     function endOfTheGame() {
         if (!askContinue) {
             console.log('Thanks for playing. Your total prize is - ' + prizeTotal + '$');
-        }    
+        }
     }
 
-    
+
     function game() {
         if (start) {
             do {
@@ -82,7 +81,7 @@
                 casesOfAnswer();
                 result();
                 endOfTheGame();
-            } while ((askContinue === true)&&(startAgain===true))
+            } while ((askContinue === true) && (startAgain === true));
         } else {
             console.log('You have not won a million today, but you could!');
         }
